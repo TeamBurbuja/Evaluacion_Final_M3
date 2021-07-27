@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap_5/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logotipo" src="img/Safety Logo H.png" alt="logotipo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Capacitaciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="crear_capacitacion.html">Crear Capacitación</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listar_capacitaciones.html">Listar Capacitaciones</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="administrar_asistentes.html">Administrar Asistentes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle activo" aria-current="page" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuarios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item activo" href="login.html">Iniciar Sesión</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="crear_usuario.html">Crear Usuario</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listado_usuarios.html">Listar Usuarios</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="editar_cliente.html">Editar Cliente</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="editar_administrativo.html">Editar Administrativo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="editar_profesional.html">Editar Profesional</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Clientes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="crear_asesorias.html">Crear Asesorías</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listado_visitas.html">Listado Visitas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listado_asesorias.html">Listado Asesorías</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listado_accidentes.html">Listado Accidentes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="reportes.html">Reportes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="responder_checklist.html">Responder Checklist</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="crear_pago.html">Crear Pago</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="listado_pago.html">Listado Pago</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Carousel -->
+    <div id="banner-login"
+        class="container-fluid d-block d-md-none d-flex justify-content-center align-items-center">
+        <!-- Imagen bg por css -->
+        <h1 class="text-white">Login Usuario</h1>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner_1.jpg" class="d-block w-100" alt="imagen banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Asesoría Profesional</h2>
+                    <p>Somos líderes en asesorías en prevención de riesgos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner_2.jpg" class="d-block w-100" alt="imagen banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Eventos de Capacitación</h2>
+                    <p>Somos líderes en asesorías en prevención de riesgos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner_3.jpg" class="d-block w-100" alt="imagen banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Visitas en Terreno</h2>
+                    <p>Somos líderes en asesorías en prevención de riesgos</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Formulario -->
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 p-4 p-lg-5">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Sucursal Santiago
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <strong>Dirección:</strong>
+                                <p>Almirante Pastene 244, Piso 1, Providencia - Santiago</p>
+                                <strong>Teléfonos:</strong>
+                                <p>+56 9 39156783 | +56 9 73088033</p>
+                                <strong>Correo:</strong>
+                                <p>contacto@safetycheck.cl</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Sucursal Concepción
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <strong>Dirección:</strong>
+                                <p>Manuel Rodriguez 445 - Concepción</p>
+                                <strong>Teléfonos:</strong>
+                                <p>+56 9 39156783 | +56 9 73088033</p>
+                                <strong>Correo:</strong>
+                                <p>contacto@safetycheck.cl</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-first mb-5 mb-lg-0 order-lg-last p-4 p-lg-5">
+                <h2 class="display-6 mb-5">Login Usuario</h2>
+                <form id="formulario">  
+                    <div class="mb-3">
+                        <label for="rut" class="form-label">RUT (XXXXXXXX-Y)<span class="fw-bold" id="rut_mensaje"></span></label>
+                        <input type="text" name="rut" class="form-control" id="rut">
+                        <span class="text-danger" id="rut_span"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" name="password" class="form-control" id="password">
+                        <span class="text-danger" id="password_span"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary px-5" id="login">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Info Usuarios -->
+    <div id="container-home" class="container-fluid py-5">
+        <h3 class="text-center text-primary fw-bold my-4">
+            ¿Qué procesos considera la plataforma actualmente?
+        </h3>
+        <div class="row">
+            <div class="col-md-6 text-center my-5">
+                <i class="far fa-address-card display-5 mb-3"></i>
+                <h3>Registro de usuarios</h3>
+                <p>
+                    Permite ingreso de usuarios: Cliente, profesional y
+                    administrativo
+                </p>
+            </div>
+            <div class="col-md-6 text-center my-5">
+                <i class="fas fa-exclamation-triangle display-5 mb-3"></i>
+                <h3>Registro de ocurrencias</h3>
+                <p>
+                    Manejo de data respectiva a accidentes realacionados al
+                    cliente
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center my-5">
+                <i class="far fa-calendar-check display-5 mb-3"></i>
+                <h3>Registro de servicios</h3>
+                <p>
+                    Manejo de visitas, capacitaciones y asesorías con sus
+                    respectivas mejoras
+                </p>
+            </div>
+            <div class="col-md-6 text-center my-5">
+                <i class="fas fa-file-invoice-dollar display-5 mb-3"></i>
+                <h3>Registro de pagos</h3>
+                <p>Detalle de pagos realizado por el cliente</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer" class="container-fluid d-flex justify-content-center align-items-center">
+        <img class="logotipo" src="img/Safety Logo H WHITE.png" alt="logotipo">
+    </div>
+    <!-- Scripts -->
+    <script src="lib/bootstrap_5/js/bootstrap.min.js"></script>
+    <script src="lib/jQuery/jquery-3.6.0.js"></script>
+    <script src="lib/jQuery-Validator/jquery.validate.js"></script>
+    <script src="lib/jQuery-Validator/localization/messages_es.js"></script>
+    <script src="lib/DataTables/datatables.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/login_rut.js"></script>
+    <script src="https://kit.fontawesome.com/8d20d6c8c4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

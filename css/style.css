@@ -1,0 +1,171 @@
+/* Estilos Generales */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+#navbarSupportedContent ul li a:hover {
+    color: orangered;
+}
+
+.activo {
+    color: orangered !important;
+}
+
+.logotipo {
+    width: 180px;
+}
+
+/* Estilos Home */
+
+.carousel-item {
+    height: 300px;
+}
+
+.fa-users,
+.fa-sitemap {
+    color: steelblue;
+}
+
+.fa-address-card,
+.fa-exclamation-triangle,
+.fa-calendar-check,
+.fa-file-invoice-dollar {
+    color: orangered;
+}
+
+#banner-home {
+    height: 300px;
+    background-image: url("../img/banner_1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#container-home {
+    background-image: url("../img/servicios_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#footer {
+    height: 120px;
+    background: #ff545d;
+}
+
+/* Estilos Crear Capacitación */
+
+#banner-crear-capacitacion {
+    height: 300px;
+    color: white;
+    background-image: url("../img/banner_3.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilos Usuarios */
+
+#banner-listado-usuarios,
+#banner-login,
+#banner-crear-usuario,
+#banner-editar-cliente,
+#banner-editar-administrativo,
+#banner-editar-profesional {
+    height: 300px;
+    color: white;
+    background-image: url("../img/banner_usuarios.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilos Clientes */
+
+#banner-crear-asesorias,
+#banner-listado-visitas,
+#banner-listado-asesorias,
+#banner-listado-accidentes,
+#banner-reportes,
+#banner-responder-checklist,
+#banner-crear-pago,
+#banner-listado-pago {
+    height: 300px;
+    color: white;
+    background-image: url("../img/banner_clientes.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilos Editar Cliente */
+
+.error {
+    color: red;
+}
+
+#consecuencias-error {
+    margin-top: 30px;
+}
+
+.fa-edit {
+    color: #303030;
+}
+
+.fa-edit:hover {
+    color: tomato;
+}
+
+/* Estilos Listado de Visitas */
+
+.visitas-icon {
+    color: #303030;
+}
+
+.visitas-icon:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.tableexport-caption {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.xlsx,
+.csv,
+.txt {
+    font-size: 14px;
+}
+
+/* Estilos Crear Asesorías */
+
+.error-input {
+    background: tomato;
+    color: white;
+}
+
+.contador-caracteres {
+    color: orangered;
+}
+
+/* Estilos Administrar Asistentes */
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+/* Estilos Login */
+
+.rut_good {
+    color: seagreen;
+}
+
+.rut_bad {
+    color: red;
+}
+
+/* Estilo Contacto */
+
+#banner-contacto {
+    height: 300px;
+    color: white;
+    background-image: url("../img/contacto_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
