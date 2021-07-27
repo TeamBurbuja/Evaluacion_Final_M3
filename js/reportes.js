@@ -1,3 +1,8 @@
+/**
+ * Implementación de plugins y métodos para la generación de gráficos estadísticos
+ * @author The Bubble
+ * @version 3.0
+ */
 document.addEventListener('DOMContentLoaded', function () {
     // Creación de gráfico tipo barras
     let ctx1 = document.getElementById('barras').getContext('2d');

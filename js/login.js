@@ -1,10 +1,16 @@
+/**
+ * Implementación de funciones para validar datos y formato de rut Chileno
+ * @author The Bubble
+ * @version 3.0
+ */
 document.addEventListener('DOMContentLoaded', function () {
+    // Declaración de variables
     let rutUsuario = document.getElementById('rut');
     let password = document.getElementById('password');
     let rutMensaje = document.getElementById('rut_mensaje');
     let rutSpan = document.getElementById('rut_span');
     let passwordSpan = document.getElementById('password_span');
-
+    // Validación de campo vacío y formato de rut correcto
     $("#formulario").submit(function (event) {
         event.preventDefault();
 
@@ -37,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 :
                 rutMensaje.innerHTML = '<span class="text-danger"> Rut Inválido </span>'
         }
+        // Validación de campo contraseña
         if (password.value.trim() === '') {
             passwordSpan.innerHTML = 'Este campo es obligatorio';
         } else if (password.value.length > 20) {

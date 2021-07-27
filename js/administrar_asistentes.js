@@ -1,4 +1,10 @@
+/**
+ * Implementación de plugin validate y DataTable
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
+    // Validate Plugin
     $('#formulario').validate({
         rules: {
             id_asistente: {
@@ -28,6 +34,7 @@ $(document).ready(function () {
             }
         }
     });
+    // DataTable Plugin
     $('#tabla').DataTable({
         language: {
             "decimal": "",
@@ -49,5 +56,40 @@ $(document).ready(function () {
                 "previous": "Anterior"
             }
         },
+    });
+    // Inserción de nueva fila en la tabla
+    $('#formulario').submit(function (e) {
+        e.preventDefault();
+        // Declaración de variables
+        let idAsistente = $('#id_asistente').val();
+        let nombreCompleto = $('#nombre').val();
+        let edad = $('#edad').val();
+        let correoAsistente = $('#correo').val();
+        let telefonoAsistente = $('#telefono').val();
+        let capacitaciones = $('#capacitaciones').val();
+        let idS = document.querySelectorAll('tbody th')
+        let opcion = false;
+        // Ciclo para validar valor de ID duplicado
+        for (let index = 0; index < idS.length; index++) {
+            if (idAsistente === '' || idAsistente < 1) {
+                console.log('Sin valor');
+                return;
+            } else if (idAsistente == idS[index].innerHTML) {
+                alert('No puedes tener un ID duplicado, ingresa un valor correcto');
+                opcion = true;
+                return;
+            }
+        }
+        // Inserción de nueva fila en tabla de asistentes
+        if (opcion == false) {
+            $('#tabla tbody').append(`
+                <tr>
+                    <th scope="row">${idAsistente}</th>
+                    <td>${correoAsistente}</td>
+                    <td>${telefonoAsistente}</td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+            `)
+        }
     });
 });

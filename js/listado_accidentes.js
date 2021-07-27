@@ -1,3 +1,9 @@
+/**
+ * Implementación de Validate plugin para validar formulario, datepicker y timepicker plugin
+ * para validar y obtener fecha desde input tipo texto
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
     $('#formulario').validate({
         rules: {

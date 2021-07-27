@@ -1,3 +1,8 @@
+/**
+ * Implementación de TableExport plugin para la descarga de los datos de la tabla, en formato xlsx, csv y txt
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
     $('#tabla-de-datos').tableExport();
 
@@ -8,5 +13,5 @@ $(document).ready(function () {
     $('.csv').addClass('btn btn-success text-white px-4 py-2 m-3');
     $('.txt').text('TXT ').append('<i class="fas fa-file-alt"></i>');
     $('.txt').addClass('btn btn-success text-white px-4 py-2 m-3');
-    
+
 });

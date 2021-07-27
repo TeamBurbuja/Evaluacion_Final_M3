@@ -1,3 +1,8 @@
+/**
+ * Implementación de Validate plugin para validar formulario
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
     $('#formulario').validate({
         rules: {

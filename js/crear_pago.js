@@ -1,3 +1,8 @@
+/**
+ * Implementación de funciones para validar datos y obtener fecha actual
+ * @author The Bubble
+ * @version 3.0
+ */
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener fecha actual
     let date = new Date();
@@ -12,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     let fecha = document.getElementById('fecha');
     fecha.innerHTML = dia + '/' + mes + '/' + anio;
-
     // Campos obligatorios y validaciones
     let monto = document.getElementById('monto');
     let boton = document.getElementById('btn_pagar');

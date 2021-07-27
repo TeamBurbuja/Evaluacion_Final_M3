@@ -1,3 +1,8 @@
+/**
+ * Implementación de funciones para validar datos, formato de fecha y conteo regresivo de caracteres
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
     // Función para conteo de caracteres
     $(function () {
@@ -26,7 +31,6 @@ $(document).ready(function () {
             }
         });
     });
-    
     // Función que se dispara con el boton enviar del formulario
     $('#formulario').submit(function (e) {
         e.preventDefault(); // Previene evento submit antes de validar los campos

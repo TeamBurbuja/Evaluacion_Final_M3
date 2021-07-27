@@ -1,3 +1,8 @@
+/**
+ * Implementación de métodos para cambiar estilo css del elemento table
+ * @author The Bubble
+ * @version 3.0
+ */
 $(document).ready(function () {
     $('#btn-1').click(function () {
         $('#tabla-asesorias th').css('background','red');
